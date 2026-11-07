@@ -1,0 +1,46 @@
+{
+    "name": "amas",
+    "version": "0.1.0",
+    "features": {
+        "server-static": {
+            "description": "Dependencies for static analysis tool",
+            "dependencies": [
+                "triton",
+                "capstone",
+                "unicorn",
+                "cli11",
+                "hash-library",
+                "yara",
+                "msgpack-c",
+                "spdlog",
+                "magic-enum",
+                "nlohmann-json",
+                "glaze"
+            ]
+        },
+        "server-dynamic": {
+            "description": "Dependencies for dynamic analysis tool"
+        },
+        "frontend": {
+            "description": "Dependencies for frontend UI"
+        },
+        "server-static-tests": {
+            "description": "Tests for static analyzer",
+            "dependencies": [
+                "doctest"
+            ]
+        },
+        "server-dynamic-tests": {
+            "description": "Tests for dynamic analyzer",
+            "dependencies": [
+                "gtest"
+            ]
+        },
+        "frontend-tests": {
+            "description": "Tests for frontend UI",
+            "dependencies": [
+                "gtest"
+            ]
+        }
+    }
+}
